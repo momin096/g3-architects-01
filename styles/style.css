@@ -4,30 +4,45 @@
 
 
 
-.work-sans{
+.work-sans {
     font-family: "Work Sans", sans-serif;
 }
 
 /* Common styles */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.max-width{
+.max-width {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.btn-primary{
+    padding: 15px 20px;
+    background-color: #FF900E;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
 }
 
 
 
 /* Header */
 
-.header{
+.header {
     background-color: #FF900E1A;
+    padding-bottom: 30px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,28 +50,60 @@ nav{
 }
 
 
-nav > h3{
+nav>h3 {
     font-size: 45px;
     font-weight: 700;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
     gap: 50px;
 }
 
-nav > ul > li{
+nav>ul>li {
     font-size: 18px;
     font-weight: 500;
     list-style: none;
 }
 
-nav > ul > li > a{
+nav>ul>li>a {
     text-decoration: none;
     color: #424242;
 }
 
-nav > ul > li > a:hover{
+nav>ul>li>a:hover {
     text-decoration: underline;
+}
+
+
+/* Banner */
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 50px auto;
+}
+
+.banner > div{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.banner div > h3{
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.banner div > p{    
+    color: #727272;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
 
 
@@ -66,16 +113,16 @@ nav > ul > li > a:hover{
 @media screen and (max-width:576px) {
 
     /* Header */
-    nav{
+    nav {
         flex-direction: column;
     }
 
-    nav > h3{
+    nav>h3 {
         font-size: 30px;
         margin-bottom: 20px;
     }
 
-    nav > ul{
+    nav>ul {
         flex-wrap: wrap;
         text-align: center;
         gap: 15px;
