@@ -108,6 +108,37 @@ nav>ul>li>a:hover {
     margin-bottom: 30px;
 }
 
+/* Quick list of Our Features */
+.features{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin: 100px auto;
+    padding: 20px;
+}
+.feature-group-img {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex: 1;
+    gap: 15px;
+}
+
+.feature-caption{
+    flex:1;
+}
+
+
+.feature-caption > h3{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.feature-caption > p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
 
 
 /* Responsive section */
@@ -137,5 +168,13 @@ nav>ul>li>a:hover {
     }
     .banner div > h3{
         font-size: 37px;
+    }
+
+    /* Quick list of Our Features */
+
+    .features{
+        flex-direction: column-reverse;
+        gap: 40px;
+        margin: 50px auto;
     }
 }
